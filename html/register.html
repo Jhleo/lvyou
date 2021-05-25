@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>闲云旅游</title>
+		<link rel="icon" href="../ico/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/register.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="main">
+				<div class="login-logo">
+					<a href="../index.html">
+						<img src="../img/logow.png" />
+					</a>
+					<span class="title">注册</span>
+				</div>
+				<div class="register-section">
+					<div class="register-section-layout">
+						<div>
+							<input class="input-phone" type="text" placeholder="输入用于登录的手机号" />
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<input class="input-error" type="text" placeholder="输入短信中的验证码" />
+							<button class="btn-valid">
+								<span style="display: block;">发送验证码</span>
+							</button>
+						</div>
+						<div class="input-tip"></div>
+						<div class="input-control">
+							<input class="input" type="text" placeholder="用户名" />
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<input class="input" type="text" placeholder="密码" />
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<button class="btn-reg">
+								<span style="display: ;">注册</span>
+							</button>
+						</div>
+						<div class="input-tip"></div>
+						<div class="register-bottom">
+							<span>已有闲云账号？<a href="login.html">登陆</a></span>
+							<span style="float: right;">同意<a href="">会员条款</a>和<a href="">免责声明</a></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="section footer">
+				<div class="wrapper clearFloat">
+					<div class="logo">
+						<img src="../img/logow.png">
+					</div>
+					<div class="info">
+						<p>2004-2020&nbsp;&copy;&nbsp;闲云旅游&reg;&nbsp;浙ICP备11001111号&nbsp;浙公网安备11010101001111&nbsp;浙ICP证111111号&nbsp;营业执照&nbsp;经营许可证</p>
+						<p>闲云旅游为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: "#app",
+
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,322 @@
+#app {
+	position: relative;
+}
+
+.enbox {
+	margin: 40px auto 0;
+	width: 1100px;
+}
+
+.enbox .title {
+	height: 32px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	margin-bottom: 16px;
+	color: #383838;
+}
+
+.header {
+	margin-top: 20px;
+	position: relative;
+	height: 320px;
+}
+
+.header .right {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	height: 318px;
+}
+
+.header .right img {
+	height: 100%;
+	border-radius: 10px;
+}
+
+.header .left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	width: 400px;
+	height: 316px;
+	border: 2px solid #6ecee9;
+	box-shadow: 0 0 15px 0 rgba(182, 222, 227, 0.8);
+	border-radius: 8px;
+}
+
+.header .top {
+	height: 36px;
+	padding-top: 20px;
+	border-bottom: 1px #eee solid;
+	padding-left: 30px;
+	width: 370px;
+	margin-bottom: 19px;
+}
+
+.header .sub {
+	float: left;
+	margin-right: 20px;
+	height: 24px;
+	font-size: 18px;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+.header .sub i {
+	color: #10b041;
+	font-size: 20px;
+	display: inline-block;
+	width: 20px;
+}
+
+.header .inputbox {
+	width: 320px;
+	height: 18px;
+	margin: 0 auto 15px;
+	padding: 10px;
+	border: 1px #e6e6e6 solid;
+	border-radius: 4px;
+}
+
+.header .inputbox span {
+	width: 52px;
+	font-size: 14px;
+	color: #9e9e9e;
+	line-height: 20px;
+	float: left;
+}
+
+.header .inputbox input {
+	width: 250px;
+	color: #212121;
+	font-size: 16px;
+	background: none;
+	border: 0 none;
+	float: left;
+}
+
+.header .btn {
+	width: 340px;
+	height: 46px;
+	margin: 0 auto;
+	background: #10b041;
+	border-radius: 23px;
+	color: #fff;
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	letter-spacing: 8px;
+	cursor: pointer;
+}
+
+.header .btn:hover{
+	background: #09a031;
+}
+
+.first ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.first li {
+	width: 540px;
+	height: 270px;
+	cursor: pointer;
+	position: relative;
+	background: no-repeat center center;
+}
+
+.first li:nth-child(3),
+.first li:nth-child(4),
+.first li:nth-child(5) {
+	margin-top: 20px;
+	width: 353px;
+}
+
+.first .name {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 21px 15px 25px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	font-size: 14px;
+	background: linear-gradient(to bottom, rgba(0, 27, 65, 0.35) 0, rgba(0, 27, 65, 0) 100%);
+}
+
+.first .name div:first-child {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.first li:hover .name {
+	background: linear-gradient(to bottom, rgba(0, 27, 65, 0.6) 0, rgba(0, 27, 65, 0) 100%);
+}
+
+.first .price {
+	height: 40px;
+	line-height: 20px;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 0 4px;
+	text-align: right;
+	background-color: #383838;
+	font-size: 16px;
+}
+
+.first .price div:first-child {
+	font-size: 14px;
+}
+
+.mod {
+	position: relative;
+}
+
+.mod ul {
+	width: 100%;
+	overflow: hidden;
+	height: 256px;
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+}
+
+.mod li {
+	position: absolute;
+	cursor: pointer;
+	transition: left 0.5s;
+}
+
+.mod .picbox {
+	width: 204px;
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+}
+
+.mod .picbox img {
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mod .btn {
+	position: absolute;
+	z-index: 200;
+	bottom: 120px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.75);
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 3px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2);
+	cursor: pointer;
+}
+
+.mod .btn:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.mod .btn i {
+	color: #000000;
+	font-size: 32px;
+	font-weight: 700;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mod .btnLeft {
+	left: 20px;
+}
+
+.mod .btnRight {
+	right: 20px;
+}
+
+.second .name {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #707070;
+	padding: 16px 0;
+}
+
+.second .name div:first-child {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #000000;
+}
+
+.third {
+	margin-bottom: 40px;
+}
+
+.third .picbox {
+	width: 260px;
+	height: 240px;
+}
+
+.third .btn {
+	bottom: 180px;
+}
+
+.third ul {
+	height: 356px;
+}
+
+.third .name {
+	height: 100px;
+	padding: 8px 0;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.third .name div:nth-child(1) {
+	color: #07c;
+}
+
+.third li:hover .name div:nth-child(1) {
+	color: #b75f00;
+}
+
+.third .name div:nth-child(2) {
+	color: #707070;
+}
+
+.third .name div:nth-child(3) {
+	color: #000000;
+	font-weight: 600;
+	margin-top: 8px;
+}
+
+.third .name div:nth-child(4) {
+	font-size: 12px;
+	color: #707070;
+	line-height: 28px;
+	margin-top: 4px;
+}
+
+.third .name div:nth-child(4) span {
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	background: #003580;
+	color: #fff;
+	border-radius: 6px 6px 6px 0;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 2px;
+}

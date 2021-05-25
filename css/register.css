@@ -1,0 +1,123 @@
+#app {
+	position: relative;
+}
+
+.main {
+	height: 1200px;
+	background: url(../img/main1.png) no-repeat;
+}
+
+.login-logo {
+	margin: 0 auto;
+	padding-top: 100px;
+	width: 380px;
+	height: 100px;
+	vertical-align: middle;
+}
+
+.login-logo img{
+	display: inline-block;
+}
+
+.title {
+	position: absolute;
+	padding-left: 40px;
+	text-align: center;
+	font: bold 40px/100px "Arial";
+	color: #FFFFFF;
+}
+
+.register-section {
+	position: relative;
+	width: 400px;
+	height: 420px;
+	margin: 20px auto 0;
+	padding: 30px 30px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+}
+
+.register-section-layout {
+	position: absolute;
+	padding-top: 20px;
+}
+
+.register-section-layout div {}
+
+.input-phone {
+	width: 350px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+}
+
+.input-error {
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding-left: 15px;
+	border: 1px solid #ddd;
+}
+
+.input-tip {
+	height: 30px;
+	line-height: 30px;
+	color: #959595;
+}
+
+.btn-valid {
+	float: right;
+	display: block;
+	box-sizing: border-box;
+	border: 0;
+	padding: 0 15px;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	vertical-align: top;
+	background-color: #00BF6C;
+	margin-left: 4px;
+	width: 125px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+.input {
+	width: 350px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding-left: 15px;
+	border: 1px solid #ddd;
+}
+
+.btn-reg {
+	display: block;
+	box-sizing: border-box;
+	border: 0;
+	width: 367px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	vertical-align: top;
+	background-color: #00BF6C;
+}
+
+.register-bottom {
+	width: 100%;
+	padding: 10px 0;
+	height: 20px;
+	line-height: 20px;
+	color: #959595;
+	font-size: 14px;
+}
+.register-bottom a{
+	color: #00BF6C;
+}

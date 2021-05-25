@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="../ico/favicon.ico">
+		<title>闲云旅游</title>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/train.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="navigation">
+				<a href="../index.html" class="logo">
+					<img src="../img/logofont.png" alt="">
+				</a>
+				<ul>
+					<li class=""><a href="destination.html">目的地</a></li>
+					<li class=""><a href="#">跟团游</a></li>
+					<li class=""><a href="#">自由行</a></li>
+					<li class=""><a href="scenic.html">景点</a></li>
+					<li class=""><a href="hotel.html">酒店</a></li>
+					<li class=""><a href="airplane.html">机票</a></li>
+					<li class="current"><a href="train.html">火车票</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="register.html">注册</a></li>
+					<li><span class="vertical">|</span></li>
+					<li><a href="login.html">登录</a></li>
+				</ul>
+			</div>
+			<div class="bannerPic">
+				<div class="bannerPic-search">
+					<div class="bannerPic-search-from">
+						<a href="" class="current-tab">国内火车票</a>
+						<a href="">汽车票</a>
+						<a href="">租车</a>
+					</div>
+					<div class="bannerPic-search-sub">
+						<div>
+							<input class="input-start" type="text" placeholder="出发站" />
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<input class="input-arrived" type="text" placeholder="到达站" />
+						</div>
+						<div class="input-tip"></div>
+						<div class="sta-today">
+							<li>
+								<input class="input-time" type="text" placeholder="2020-3-15" />
+								<i>今天出发</i>
+							</li>
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<a href="" class="s-button">搜索列车</a>
+						</div>
+					</div>
+					<div class="bannerPic-search-notice">
+						<h2>重要新闻</h2>
+						<p>为加强新型冠状病毒感染的肺炎疫情防控工作，配合各地2月10日前灵活安排工作的措施，进一步方便旅客办理退票，中国国家铁路集团有限公司决定，自2020年2月6日0时起，此前在车站、12306网站等各渠道已购买的全国铁路火车票，旅客在开车前自愿改变行程需退票的，铁路部门均不收取退票手续费，购买铁路乘意险的一同办理。</p>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal">
+				<div class="top">
+					<h3>热门车票</h3>
+					<ul>
+						<li v-for="(item, index) in start" :class="{sel:startSel == index}" @mouseenter="startSel=index">
+							{{item.start}}
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					<ul v-for="(itemstart, indexstart) in start" v-show="indexstart == startSel">
+						<li v-for="(item, index) in itemstart.details">
+							<div class="box">
+								{{itemstart.start}}&nbsp;-&nbsp;{{item.end}}
+								<span>
+									<i>&yen;</i>{{item.p}}<em>起</em>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="question">
+				<h2>常见问题</h2>
+				<div class="question-contant">
+					<div class="square">
+						<h3>身份认证</h3>
+						<p>2014年新规：从未在网络购票的用户，请先携身份证去火车站专门窗口核验身份证信息，核验通过后才能网上购票。</p>
+					</div>
+					<div class="square">
+						<h3>取票方式</h3>
+						<p>若您使用二代居民身份证预订火车票产品可凭预订时所使用的乘车人证件到车站售票窗口、铁路客票代售点或车站自动售票机上办理换票手续...</p>
+					</div>
+					<div class="square">
+						<h3>如何退票</h3>
+						<p>预订成功后，如未取票且离产品内显示的火车发车时间大于1小时30分钟，您可在线申请退票。预订成功后，如已取票或离产品内显示的火车发车时间小于1小时30分钟...</p>
+					</div>
+					<div class="square">
+						<h3>如何改签</h3>
+						<p>预订成功后，如需办理订单内的车票改签，您须在换取纸质车票后携带预订时所使用的乘车人有效身份证件原件，在列车开车前前往车站改签窗口办续...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section footer">
+				<div class="wrapper clearFloat">
+					<div class="logo">
+						<img src="../img/logow.png">
+					</div>
+					<div class="info">
+						<p>2004-2020&nbsp;&copy;&nbsp;闲云旅游&reg;&nbsp;浙ICP备11001111号&nbsp;浙公网安备11010101001111&nbsp;浙ICP证111111号&nbsp;营业执照&nbsp;经营许可证</p>
+						<p>闲云旅游为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/dataTrain.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: "#app",
+				data: {
+					start: [],
+					startSel: 0,
+				},
+				mounted: function() {
+					this.start = data1;
+
+				}
+			})
+		</script>
+	</body>
+
+</html>

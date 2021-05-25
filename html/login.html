@@ -1,0 +1,94 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>闲云旅游</title>
+		<link rel="icon" href="../ico/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="main">
+				<div class="login-logo">
+					<a href="../index.html">
+						<img src="../img/logow.png" />
+					</a>
+					<span class="title">登录</span>
+				</div>
+				<div class="login-section ">
+					<div class="login-section-title">
+						<div @click="login(1)" :class="[change == 1 ? 'mess':'']">账号登录</div>
+						<div @click="login(2)" :class="[change == 2 ? 'mess':'']">短信快捷登录</div>
+					</div>
+					<div v-if="change == 1" class="login-section-content">
+						<div>
+							<li>
+								<input type="text" placeholder="手机号/用户名/邮箱" />
+							</li>
+							<li>
+								<input type="text" placeholder="密码" />
+							</li>
+							<a href="" style="	display: block;font-size: 12px;color: #959595; padding-left: 400px;">忘记密码</a>
+						</div>
+						<div class="login-section-content-but">
+							<a href="">登录</a>
+						</div>
+						<div class="login-section-content-bot">
+							<p>没有闲云账号?
+								<a href="register.html">立即注册</a>
+							</p>
+						</div>
+					</div>
+
+					<div v-if="change == 2" class="login-section-content">
+						<li>
+							<input type="text" placeholder="手机号"/>
+						</li>
+						<li style="margin-bottom: 30px;">
+							<input type="text" placeholder="输入短信验证码" style="width: 225px;height: 40px;padding-left: 15px;border: 1px solid #ddd;"/>
+							<a href="" style="color:#959595;">发送验证码</a>
+						</li>
+						<div class="login-section-content-but">
+							<a href="">登录</a>
+						</div>
+						<div class="login-section-content-bot">
+							<p>没有闲云账号?
+								<a href="">立即注册</a>
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section footer">
+			<div class="wrapper clearFloat">
+				<div class="logo">
+					<img src="../img/logow.png">
+				</div>
+				<div class="info">
+					<p>2004-2020&nbsp;&copy;&nbsp;闲云旅游&reg;&nbsp;浙ICP备11001111号&nbsp;浙公网安备11010101001111&nbsp;浙ICP证111111号&nbsp;营业执照&nbsp;经营许可证</p>
+					<p>闲云旅游为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。</p>
+				</div>
+			</div>
+		</div>
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: "#app",
+				data: {
+					change: 1
+				},
+				methods: {
+					login: function(flag) {
+						this.change = flag;
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

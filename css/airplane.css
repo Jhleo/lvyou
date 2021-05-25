@@ -1,0 +1,244 @@
+#app {
+	position: relative;
+}
+
+.banner_Pic {
+	width: 100%;
+	min-width: 1200px;
+	height: 420px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	background: no-repeat center center;
+	background-image: url(../img/hc2.jpg);
+}
+
+.banner_Pic-search {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	padding: 20px 20px 0;
+	margin: 50px auto 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.banner_Pic-search-from {
+	box-sizing: border-box;
+	border-bottom: 1px solid#e8e8e8;
+	height: 35px;
+	line-height: 35px;
+}
+
+.banner_Pic-search-from .current-tab {
+	color: #5ee425;
+	border-bottom: 2px solid #5ee425;
+}
+
+.banner_Pic-search-from a {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	width: 50%;
+	height: 35px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	transition: color .2s;
+	border-bottom: 2px solid #F6F6F6;
+	color: #fff;
+}
+
+.banner_Pic-search-flight-type{
+	padding-top: 10px;
+}
+
+.banner_Pic-search-flight-type span {
+	display: inline-block;
+	width: 75px;
+	padding-right: 10px;
+	text-align: right;
+	color: #FFFFFF;
+}
+.banner_Pic-search-flight-type label{
+	color: #FFFFFF;
+}
+.banner_Pic-search-flight-sub {
+	position: absolute;
+	padding-left: 10px;
+}
+.input-tip {
+	height: 20px;
+	line-height: 20px;
+	color: #959595;
+}
+.input-start {
+	width: 460px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+}
+.input-arrived {
+	width: 460px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+}
+.input-time {
+	width: 460px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+}
+.s-button:hover {
+	background: #f90;
+}
+
+.s-button {
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #10B041;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+
+.question {
+	width: 1200px;
+	height: 200px;
+	padding-bottom: 120px;
+	color: #28546A;
+	margin: 0 auto;
+}
+
+.question h2 {
+	font: 18px/30px "Arial";
+	color: #28546a;
+	padding-left: 10px;
+	border-bottom: 2px solid #42b312;
+}
+
+.question-contant {
+	text-align: left;
+}
+
+.question .square {
+	padding-left: 37px;
+	padding-right: 37px;
+	width: 226px;
+	float: left;
+	line-height: 25px;
+	padding-top: 25px;
+	color: #666;
+	line-height: 1.5em;
+}
+.question .square h3{
+	font: 18px/30px "Arial";
+	color: #28546A;
+}
+.question .square p{
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.horizontal {
+	width: 1200px;
+	background: #fff;
+	border: 1px solid #eaeaea;
+	margin: 30px auto;
+	padding-bottom: 30px;
+}
+
+.horizontal .top h3 {
+	font: 18px/30px "Arial";
+	color: #28546a;
+	padding: 30px 0 10px 25px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.horizontal .content {
+	margin-top: 20px;
+}
+
+.horizontal .content li {
+	display: inline-block;
+	padding: 0 20px;
+	border-right: 1px solid #EEEEEE;
+	width: 259px;
+}
+
+.horizontal .content li:nth-child(4n){
+	border-right:none
+}
+
+.horizontal .box {
+	height: 30px;
+	padding: 0 5px;
+	margin-bottom: 7px;
+	font: 14px/30px "Arial";
+	position: relative;
+	cursor: pointer;
+}
+
+.horizontal .box:hover{
+	background-color: #DDDDDD;
+}
+
+.horizontal .box span {
+	position: absolute;
+	right: 5px;
+	top: 0;
+	color: #f60;
+	font-size: 20px;
+	font-family: microsoft yahei;
+}
+
+.horizontal .box span i {
+	font-size: 12px;
+	font-style: normal;
+}
+
+.horizontal .box span em {
+	color: #999;
+	font-size: 12px;
+}
+
+.horizontal .content2 {
+	margin-top: 20px;
+}
+
+.horizontal .content2 .name{
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.horizontal .content2 ul{
+	display: inline-block;
+}
+
+.horizontal .content2 li{
+	padding: 0 20px;
+	border-right: 1px solid #EEEEEE;
+	width: 259px;
+	display: block;
+	padding-bottom: 7px;
+} 
+
+.horizontal .content2 ul:last-child li{
+	border-right:none
+}
+
+.horizontal .content2 .box{
+	margin-bottom: 0;
+}

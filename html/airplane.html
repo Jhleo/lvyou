@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="../ico/favicon.ico">
+		<title>闲云旅游</title>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/airplane.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="navigation">
+				<a href="../index.html" class="logo">
+					<img src="../img/logofont.png" alt="">
+				</a>
+				<ul>
+					<li class=""><a href="destination.html">目的地</a></li>
+					<li class=""><a href="#">跟团游</a></li>
+					<li class=""><a href="#">自由行</a></li>
+					<li class=""><a href="scenic.html">景点</a></li>
+					<li class=""><a href="hotel.html">酒店</a></li>
+					<li class="current"><a href="airplane.html">机票</a></li>
+					<li class=""><a href="train.html">火车票</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="register.html">注册</a></li>
+					<li><span class="vertical">|</span></li>
+					<li><a href="login.html">登录</a></li>
+				</ul>
+			</div>
+			<div class="banner_Pic">
+				<div class="banner_Pic-search">
+					<div class="banner_Pic-search-from">
+						<a href="" class="current-tab">境内</a>
+						<a href="">出境·中国港澳台</a>
+					</div>
+					<div class="banner_Pic-search-flight">
+					<div class="banner_Pic-search-flight-type">
+						<span>航班类型</span>
+						<label>
+							<input type="radio" name="flighttype" value="单程"/>
+							单程
+						</label>
+						<label>
+							<input type="radio" name="flighttype" value="往返"/>
+							往返
+						</label>
+						<label>
+							<input type="radio" name="flighttype" value="多程"/>
+							多程
+						</label>
+					</div>
+					<div class="input-tip"></div>
+					<div class="banner_Pic-search-flight-sub">
+						<div>
+							<input class="input-start" type="text" placeholder="出发城市" />
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<input class="input-arrived" type="text" placeholder="到达城市" />
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<li>
+								<input class="input-time" type="text" placeholder="日期" />
+							</li>
+						</div>
+						<div class="input-tip"></div>
+						<div>
+							<a href="" class="s-button">搜索</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal">
+				<div class="top">
+					<h3>上海出发</h3>
+				</div>
+				<div class="content">
+					<ul >
+						<li v-for="(item, index) in flydata1.details">
+							<div class="box">
+								{{flydata1.start}}&nbsp;-&nbsp;{{item.end}}
+								<span>
+									<i>&yen;</i>{{item.p}}<em>起</em>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="top">
+					<h3>航司专区</h3>
+				</div>
+				<div class="content2">
+					<ul v-for="(itemfly, indexfly) in flydata2">
+						<li class="name">
+							{{itemfly.name}}
+						</li>
+						<li v-for="(item, index) in itemfly.details">
+							<div class="box">
+								{{item.fly}}
+								<span>
+									<i>&yen;</i>{{item.p}}<em>起</em>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="question">
+				<h2>常见问题</h2>
+				<div class="question-contant">
+					<div class="square">
+						<h3>乘客类型限制</h3>
+						<p>成人票≥12周岁，2周岁≤儿童票＜12周岁，暂不支持2周岁（不含）以下婴儿乘机人购票...</p>
+					</div>
+					<div class="square">
+						<h3>机票价格</h3>
+						<p>机票价格为实时计价，可能会发生价格或舱位变更，请以支付前显示的价格为准，并尽快完成支付。支付之前请仔细查看退改签规则和实际价格...</p>
+					</div>
+					<div class="square">
+						<h3>支付方式</h3>
+						<p>支持部分银行借记卡、信用卡等支付，购买机票暂时只支持一次性付款，暂不支持分期付款。...</p>
+					</div>
+					<div class="square">
+						<h3>证件有效期</h3>
+						<p>在填写资料时，请您确认您所选择的航班起飞日期在您的证件有效期内，否则会影响您的正常出行。...</p>
+					</div>
+				</div>
+			</div>
+			<div class="section footer">
+				<div class="wrapper clearFloat">
+					<div class="logo">
+						<img src="../img/logow.png">
+					</div>
+					<div class="info">
+						<p>2004-2020&nbsp;&copy;&nbsp;闲云旅游&reg;&nbsp;浙ICP备11001111号&nbsp;浙公网安备11010101001111&nbsp;浙ICP证111111号&nbsp;营业执照&nbsp;经营许可证</p>
+						<p>闲云旅游为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/dataAirplane.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: "#app",
+				data: {
+					flydata1:[],
+					flydata2:[]
+				},
+				mounted: function() {
+					this.flydata1 = data1;
+					this.flydata2 = data2;
+				}
+			})
+		</script>
+	</body>
+
+</html>

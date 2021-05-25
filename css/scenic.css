@@ -1,0 +1,133 @@
+#app {
+	position: relative;
+}
+
+.enbox {
+	width: 1200px;
+	margin: auto;
+}
+
+.enbox .title {
+	border-bottom: 2px solid #10b041;
+	padding: 5px 0;
+}
+
+.enbox .title span {
+	font: 24px/30px Microsoft yahei;
+	color: #10b041;
+}
+
+.mod ul {
+	padding: 30px 0 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mod li {
+	width: 293px;
+	cursor: pointer;
+}
+
+.mod .picbox {
+	width: 293px;
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+}
+
+.picbox img {
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: transform .3s;
+}
+
+.picbox h3 {
+	font-weight: 400;
+	position: absolute;
+	font: 24px/30px Microsoft yahei;
+	color: #fff;
+	top: 124px;
+	left: 0;
+	text-indent: .5em;
+	text-shadow: 1px 1px 7px #000;
+}
+
+.mod .infobox {
+	padding: 5px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1px;
+}
+
+.infobox p {
+	color: #555;
+	font: 14px/30px Microsoft yahei;
+}
+
+.mod li:hover .picbox img {
+	transform: translate(-50%, -54%);
+}
+
+.mod li:hover .infobox {
+	border-bottom: 2px solid #10b041;
+	margin-bottom: 0;
+}
+
+.header ul {
+	width: 1200px;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.header li {
+	display: inline-block;
+	width: 133px;
+	height: 400px;
+	transition: width .5s;
+}
+
+.header .sel {
+	width: 402px;
+}
+
+.header li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.header li a img {
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header .mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+
+.header .mask h3 {
+	color: #fff;
+	width: 30px;
+	margin: 0 auto;
+	display: block;
+	font: 30px/30px Microsoft Yahei;
+	position: relative;
+	padding: 80px 0 0 0;
+}
